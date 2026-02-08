@@ -1,0 +1,32 @@
+form{
+	font-family: sans-serif;
+	border: 1px solid black;
+	border-radius: 5px;
+	max-width: 220px;
+	margin: 20px;
+	padding: 10px;
+}
+
+.title{
+	font-weight: 800;
+	font-size: 13px;
+}
+
+fieldset{
+	border: none;
+}
+
+input{
+	margin: 5px 0px 12px 0px;
+}
+
+textarea{
+	resize: vertical;
+	width: 165px;
+	min-height: 20px;
+	max-height: 120px;
+}
+
+.privat{
+	cursor: pointer;
+}
