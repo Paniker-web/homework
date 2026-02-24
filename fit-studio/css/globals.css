@@ -52,11 +52,28 @@ a{
   text-transform: uppercase;
   text-align: center;
   color: #fff;
-  transition: opacity 0.2s;
+  transition: opacity 0.2s, background-color 0.2s;
 }
 
 .button:hover{
   opacity: 0.85;
+}
+
+.button:not(:disabled):active{
+  background-color: #2d82cd;
+}
+
+button.button:disabled{
+  opacity: 0.65;
+  cursor: default;
+}
+
+.button:active{
+  background-color: #2d82cd;
+}
+
+a, button {
+  outline: none;
 }
 
 .section{ 
@@ -74,6 +91,15 @@ a{
   font-size: 48px;
 }
 
+.title-medium {
+  font-family: Oswald, sans-serif ;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 115%;
+  text-transform: uppercase;
+  color: #2c332f;
+}
+
 .text-sub {
 	font-weight: 300;
 	font-size: 14px;
@@ -82,3 +108,11 @@ a{
 	text-align: right;
 	color: #858e8a;
 }
+
+a:focus-visible, 
+button:focus-visible,
+summary:focus-visible{
+  outline: 2px solid #3596ed;
+  outline-offset: 1px;
+}
+
