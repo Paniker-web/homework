@@ -4,6 +4,7 @@
 @import "./base/vars.css";
 @import "./base/globals.css";
 
-/* block */
-@import "./block/header.css";
-@import "./block/menu.css";
+/* blocks */
+@import "./blocks/header.css";
+@import "./blocks/menu.css";
+@import "./blocks/burger.css";
