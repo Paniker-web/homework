@@ -1,0 +1,18 @@
+:root {
+	/* font-family */
+	--font-family: "Oswald", sans-serif;
+  --second-family: "Archivo", sans-serif;
+
+	/* colors */
+	--bg-color: #141414;
+	--main-color: #fff;
+	--main-dark-color: #ffffff4d;
+	--accent-color: #f47521;
+
+	/* container */
+	--container-width: 1920px;
+	--container-padding: 106px;
+	
+	/* transitions */
+		--transition-time: 0.2s
+}

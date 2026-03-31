@@ -1,0 +1,27 @@
+.header{ 
+	padding-top: 47px;
+	background-color: var(--bg-color);
+}
+
+.header__container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-bottom: 52px;
+	border-bottom: 1px solid var(--main-dark-color);
+}
+
+.header__logo {
+	margin-right: 278px;
+}
+
+.header__menu { 
+	flex-grow: 1;
+}
+
+.header__controls {
+	display: flex;
+	align-items: center;
+	gap: 36px;
+}
+
