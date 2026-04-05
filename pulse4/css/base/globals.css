@@ -1,0 +1,66 @@
+.page {
+	font-family: var(--font-family);
+	color: var(--main-color);
+}
+
+.page__body {
+	min-width: 375px;
+	background-color: var(--bg-color);
+	min-height: 200vh;
+}
+
+.container {
+	width: min(var(--container-width), 100% - var(--container-padding) * 2);
+	margin-inline: auto;
+}
+
+img {
+	object-fit: cover;
+}
+
+a:focus-visible,
+button:focus-visible {
+	outline: 1px solid var(--accent-color);
+	offset: 2px;
+}
+
+.title-md,
+.title-sm,
+.title-text {
+	font-family: var(--font-family);
+	font-weight: 600;
+}
+
+.title-md {
+	font-size: 198px;
+	line-height: 98%;
+	color: #fff;
+}
+
+.title-sm {
+	line-height: 98%;
+	font-size: 397px;
+}
+
+.title-desc {
+	font-family: var(--second-family);
+	font-weight: 600;
+	font-size: 20px;
+	letter-spacing: 0.2em;
+	color: var(--accent-color);
+}
+
+.title-text {
+	font-size: 42px;
+	color: var(--bg-color);
+}
+
+.title-link {
+	font-family: var(--second-family);
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 144%;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: var(--bg-color);
+}
