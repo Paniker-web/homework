@@ -1,0 +1,253 @@
+.categories {
+  margin-bottom: 80px;
+}
+
+.categories__header {
+  margin-bottom: 56px;
+  text-align: center;
+}
+
+.categories__title {
+  margin-bottom: 9px;
+}
+
+.categories__description {
+  max-width: 628px;
+  margin: 0 auto;
+}
+
+.categories__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 2.05fr) repeat(2, minmax(0, 1fr));
+  grid-template-rows: minmax(0, 1.75fr) minmax(0, 1fr);
+  column-gap: 12px;
+  row-gap: 40px;
+  width: 100%;
+  height: clamp(520px, 61.5vw, 792px);
+}
+
+.category-card {
+  position: relative;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+  box-shadow: 0 4px 35px 0 rgba(0, 0, 0, 0.25);
+}
+
+.category-card--laptop {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.category-card--phones {
+  grid-column: 2;
+  grid-row: 1 / 3;
+}
+
+.category-card--tablet {
+  grid-column: 3;
+  grid-row: 1 / 3;
+}
+
+.category-card--watch {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.category-card__image {
+  position: absolute;
+  display: block;
+  max-width: 100%;
+  object-fit: contain;
+  pointer-events: none;
+  user-select: none;
+}
+
+.category-card__image--laptop {
+  top: 0;
+  left: 5%;
+  object-position: left top;
+}
+
+.category-card__image--phones {
+  top: 90px;
+  left: 3%;
+  object-position: center;
+}
+
+.category-card__image--tablet {
+  top: 30%;
+  left: 0;
+  object-position: center;
+}
+
+.category-card__image--watch {
+  inset: 0 auto 0 7%;
+  object-position: center;
+}
+
+.category-card__content {
+  position: absolute;
+  right: 6.5%;
+  bottom: 7%;
+  z-index: 1;
+  max-width: 58%;
+  text-align: right;
+}
+
+.category-card__content--center {
+  right: 7%;
+  bottom: 18%;
+  left: 7%;
+  max-width: none;
+  text-align: center;
+}
+
+.category-card__content--top {
+  top: 14%;
+  right: 5%;
+  left: 5%;
+  bottom: auto;
+  max-width: none;
+  text-align: center;
+}
+
+.category-card__eyebrow {
+  margin: 0 0 4px;
+}
+
+.category-card__laptops {
+  margin: 0;
+  text-align: right;
+}
+
+.category-card__phones {
+  text-align: center;
+}
+
+.category-card__tablet {
+  text-align: center;
+}
+
+.category-card__watch {
+  text-align: right;
+}
+
+@media (max-width: 1360px) {
+  .categories__header {
+    margin-bottom: 44px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .categories {
+    margin-bottom: 64px;
+  }
+
+  .categories__description {
+    max-width: 560px;
+  }
+
+  .categories__description br {
+    display: none;
+  }
+
+  .categories__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: none;
+    grid-auto-rows: 1fr;
+    gap: 20px;
+    height: auto;
+  }
+
+  .category-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px 20px 0;
+    background-color: var(--color-white);
+  }
+
+  .category-card--laptop,
+  .category-card--phones,
+  .category-card--tablet,
+  .category-card--watch {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .category-card__content,
+  .category-card__content--center,
+  .category-card__content--top {
+    position: static;
+    order: -1;
+    max-width: none;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .category-card__laptops,
+  .category-card__watch {
+    text-align: center;
+  }
+
+  .category-card__image {
+    position: static;
+    width: auto;
+    max-width: 100%;
+    height: 300px;
+    margin-top: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .categories {
+    margin-bottom: 56px;
+  }
+
+  .categories__header {
+    margin-bottom: 28px;
+  }
+
+  .categories__grid {
+    gap: 14px;
+  }
+
+  .category-card {
+    padding: 24px 12px 0;
+  }
+
+  .category-card__content,
+  .category-card__content--center,
+  .category-card__content--top {
+    margin-bottom: 14px;
+  }
+
+  .category-card__image {
+    height: 240px;
+  }
+}
+
+@media (max-width: 600px) {
+  .categories__grid {
+    grid-template-columns: minmax(0, 1fr);
+    grid-auto-rows: auto;
+    gap: 20px;
+  }
+
+  .category-card {
+    padding: 28px 5px 0;
+  }
+
+  .category-card__image--laptop,
+  .category-card__image--watch {
+    width: 100%;
+    height: auto;
+  }
+
+  .category-card__image--phones,
+  .category-card__image--tablet {
+    width: 100%;
+    height: auto;
+  }
+}
